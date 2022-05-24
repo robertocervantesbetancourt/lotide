@@ -1,15 +1,21 @@
 const eqArrays = function(arr1, arr2) {
   for (let x = 0; x < arr1.length; x++) {
     if (arr1[x] !== arr2[x]) {
-      console.log(`${arr1} is NOT equal to ${arr2}`);
-      return 
+      return false;
     }
   } 
-  console.log(`${arr1} is equal to ${arr2}`);
-  return 
+  return true;
 };
 
-eqArrays(["1","2","3"], ["1","2","3"]);
-eqArrays(["1","2","3"], ["1","2",3]);
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
+const assertArraysEqual = function(value) {
+  if (value === false) {
+    console.log('Arrays are NOT equal');
+    return
+  } 
+  console.log('Both arrays are equal');
+  return
+}
+
+
+assertArraysEqual(eqArrays(["1","2","3"], ["1","2","3"]));
+assertArraysEqual(eqArrays(["1","2","3"], ["1","2",3]));
