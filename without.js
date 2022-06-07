@@ -1,20 +1,17 @@
-
-
 const without = function(arr1, arr2) {
   const newArr = arr1.map(x => x);
-  console.log(newArr);
-  for (let i = 0; i < arr2.length; i++){
-    console.log(arr2[i]);
-    for (let j = 0; j < arr1.length; j++){
-      //console.log(arr1[j]);
+  for (let i = 0; i < arr2.length; i++) {
+    for (let j = 0; j < arr1.length; j++) {
       if (arr2[i] === arr1[j])
         newArr.splice(j, 1);
-      }
-      console.log(newArr);
     }
-}
+  } return newArr;
+};
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse",'hello']);
+module.exports = without;
 
-without(['1','2','3'],['1','2','3']);
+
+// const words = ["hello", "world", "lighthouse"];
+// console.log(without(words, ["lighthouse",'hello']));
+
+// console.log(without(['1','2','3'],['1','2','3']));
