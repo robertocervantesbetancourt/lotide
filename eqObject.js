@@ -32,6 +32,10 @@ const eqObject = function(object1, object2) {
   }
 };
 
+module.exports = eqObject;
+
+
+//EXPLORING SOLUTION WITH MENTOR
 // const isObject = function (val){
 //   return (typeof val === 'object' && !Array.isArray(val));
 // };
@@ -59,15 +63,14 @@ const eqObject = function(object1, object2) {
 //   return true;
 // }
 
-module.exports = eqObject;
 
-const restult0 = eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 });
-console.log('Result0 ===', restult0);
-//console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); //=>false
+// const restult0 = eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 });
+// console.log('Result0 ===', restult0);
+// //console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); //=>false
 
-console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2, c: 0 })); //=>false
-console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); //=> false
-console.log(eqObject({ a: { z: 1 }, b: 2, c: [1,2,3]}, { a: { z: 1 }, b: 2, c:[1,2,3]})); //=>true
+// console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2, c: 0 })); //=>false
+// console.log(eqObject({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); //=> false
+// console.log(eqObject({ a: { z: 1 }, b: 2, c: [1,2,3]}, { a: { z: 1 }, b: 2, c:[1,2,3]})); //=>true
 
 
 
