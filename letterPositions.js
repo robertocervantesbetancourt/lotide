@@ -1,3 +1,5 @@
+//returns an object where the key is a letter (of the sentence) and the value is the location(s) of that letter in the sentence
+
 const letterPositions = function(sentence) {
   const result = {};
   let index = 0;
@@ -11,7 +13,6 @@ const letterPositions = function(sentence) {
       index++;
     }
   }
-  //console.log(result);
   return result;
 };
 
