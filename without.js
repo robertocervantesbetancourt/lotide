@@ -1,3 +1,5 @@
+//Removes from arr1 values from arr2
+
 const without = function(arr1, arr2) {
   const newArr = arr1.map(x => x);
   for (let i = 0; i < arr2.length; i++) {
@@ -9,9 +11,3 @@ const without = function(arr1, arr2) {
 };
 
 module.exports = without;
-
-
-// const words = ["hello", "world", "lighthouse"];
-// console.log(without(words, ["lighthouse",'hello']));
-
-// console.log(without(['1','2','3'],['1','2','3']));
