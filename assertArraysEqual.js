@@ -1,7 +1,7 @@
 const eqArrays = require('./eqArrays');
 
-const assertArraysEqual = function(value) {
-  if (value === false) {
+const assertArraysEqual = function(callback) {
+  if (callback === false) {
     console.log('Arrays are NOT equal');
     return;
   }
