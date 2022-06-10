@@ -1,3 +1,5 @@
+//find the key of a specific value
+
 const findKeyByValue = function(obj, val) {
   let key = undefined;
   
@@ -6,7 +8,6 @@ const findKeyByValue = function(obj, val) {
       key = element;
     }
   }
-  //console.log(key);
   return key;
 };
 
