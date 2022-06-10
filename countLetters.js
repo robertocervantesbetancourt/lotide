@@ -1,4 +1,4 @@
-
+//count how many times each letter appears in a sentence
 
 const countLetters = function(sentence) {
   const result = {};
@@ -11,11 +11,9 @@ const countLetters = function(sentence) {
       }
     }
   }
-  // console.log(result);
   return result;
 };
 
 module.exports = countLetters;
 
-// const result1 = countLetters('lighthouse in the house');
-// console.log(result1);
+
