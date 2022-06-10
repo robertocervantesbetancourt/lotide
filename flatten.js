@@ -10,10 +10,8 @@ const flatten = function(arr) {
       }
     }
   }
-  console.log(flattenArray);
   return;
 };
 
 module.exports = flatten;
   
-// flatten([1, 2, [3, 4], 5, [6]]);
