@@ -1,3 +1,5 @@
+//return array without first value
+
 const tail = function(arr) {
   let tailArr = arr.slice(1);
   return tailArr;
