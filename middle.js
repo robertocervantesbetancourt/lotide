@@ -1,3 +1,5 @@
+//return middle values of array
+
 const middle = function(arr) {
   let middleArr = [];
   let middleVal = 0;
