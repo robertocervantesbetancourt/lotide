@@ -1,3 +1,5 @@
+//Print success/fail message to console if arrays are equal or not
+
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(callback) {
